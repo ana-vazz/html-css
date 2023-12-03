@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px ;
+            border-collapse: collapse;
+            position: relative;
+        }
+        caption
+    {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 10px;
+        background-color: rgb(232, 232, 232);
+    }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        thead, tfoot{
+            background-color: grey;
+            color: white;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+        tbody>tr:nth-child(odd){
+            background-color: lightgray;
+
+        }
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Anatomia para tabelas grandes 
+    table
+         caption
+        thead
+            tr
+            td
+            th
+        tbody
+        tr,td,th
+        tfoot
+        tr,td,th
+    -->
+    <Table>
+        <caption>População por Distrito</caption>
+        <thead>
+            <tr>
+                <th scope="col">Distrito</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lisboa</td>
+                <td class="num">2 287 869</td>
+            </tr>
+            <tr>
+                <td>Porto</td>
+                <td class="num">1 803 223</td>
+            </tr>
+            <tr>
+                <td>Braga</td>
+                <td class="num">932 588</td>
+            </tr>
+            <tr>
+                <td>Setúbal</td>
+                <td class="num">850 128</td>
+            </tr>
+            <tr>
+                <td>Aveiro</td>
+                <td class="num">708 902</td>
+            </tr>
+            <tr>
+                <td>Faro</td>
+                <td class="num">469 983</td>
+            </tr>
+            <tr>
+                <td>Leiria</td>
+                <td class="num">435 169</td>
+            </tr>
+            <tr>
+                <td>Santarém</td>
+                <td class="num">431 633</td>
+            </tr>
+            <tr>
+                <td>Coimbra</td>
+                <td class="num">411 510</td>
+            </tr>
+            <tr>
+                <td>Viseu</td>
+                <td class="num">352 720</td>
+            </tr>
+            <tr>
+                <td>Madeira</td>
+                <td class="num">252 693</td>
+            </tr>
+            <tr>
+                <td>Açores</td>
+                <td class="num">236 794</td>
+            </tr>
+            <tr>
+                <td>Viana do Castelo</td>
+                <td class="num">231 882</td>
+            </tr>
+            <tr>
+                <td>Vila Real</td>
+                <td class="num">205 148</td>
+            </tr>
+            <tr>
+                <td>Castelo Branco</td>
+                <td class="num">178 664</td>
+            </tr>
+            <tr>
+                <td>Castelo Branco</td>
+                <td class="num">178 664</td>
+            </tr>
+            <tr>
+                <td>Castelo Branco</td>
+                <td class="num">178 664</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>10 421 117</strong></td>
+        </tfoot>
+    </Table>
+</body>
+</html>
