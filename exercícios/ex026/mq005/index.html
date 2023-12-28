@@ -12,7 +12,7 @@
 <body>
     <header>
         <h1>Meu site</h1>
-        <span id="burger" class="material-icons" oneclick="clickMenu">menu</span>
+        <span id="burger" class="material-icons" onClick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
                 <li><a href="0">Opção 1</a></li>
@@ -33,7 +33,16 @@
     </main>
     <script>
         function clickMenu() {
-            ITENS.STYLE.DISPLAY = "block"
+
+            console.log("função invocada")
+            
+            let teste = document.getElementById("itens");
+
+            if(teste.style.display === "block") {
+                teste.style.display = "none";
+            } else {
+                teste.style.display = "block"
+            }
         }
     </script>
 </body>
